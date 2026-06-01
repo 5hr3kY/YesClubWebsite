@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+    <head>
+        <title>Yes! Club USA</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial=scale=1.0">
+        <meta name = "keywords" content = "Yes! Club USA, Yes Club, community service">
+        <meta name= "description" content= "Helping our local community in Murrieta/Temecula, California as highschooler through volunteer work.">
+        <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "NGO",
+                    "name": "Yes! Club USA",
+                    "url": "https://murrietarotary.org", <!-- work on this-->
+                    "logo": "https://murrietarotary.org", <!--work on this-->
+                    "sameAs": [
+                    "https://facebook.com", <!--work on this-->
+                    "https://instagram.com"  <!--work on this-->
+                    ],
+                    "address": {
+                    "@type": "PostalAddress",  <!--work on this-->
+                    "addressLocality": "Murrieta",
+                    "addressRegion": "CA",
+                    "addressCountry": "US"
+                    }
+                }
+        </script>
+    </head>
+
+    <body>
+
+        <div id="header"></div>
+
+        <div id = "hero"></div>
+
+        <div id = "value"   ></div>
+
+        <div id = "credibility"></div>
+
+        <div id = "works"></div>
+
+        <div id ="footer"> </div>
+        <script>
+            fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+            
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>
