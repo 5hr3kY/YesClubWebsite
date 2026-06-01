@@ -33,7 +33,7 @@
 
         <div id="header">        </div>
 
-        <div id = "hero">
+        <div id = "hero" class = "side">
             <video id = "hero-video" autoplay muted loop>
                 <source src="img/hero.mov" type="video/mp4">
             </video>
@@ -47,17 +47,38 @@
             </div>
         </div>
 
-        <div id = "value">
-            <h1>How We've Changed our community</h1>
-            <h3 class = "value-impact">100+ lives impacted</h3>
-            <h3 class = "value-impact">$10k raised for local causes</h3>
-            <h3 class = "value-impact">100+ events hosted</h3>
-
+        <div id = "value" class = "side">
+            <section>
+                <h1>How We've Changed our community</h1>
+                <h3 class = "value-impact">100+ lives impacted</h3>
+                <h3 class = "value-impact">$10k raised for local causes</h3>
+                <h3 class = "value-impact">100+ events hosted</h3>
+            </section>
+            <section>
+                <h1>Our Mission</h1>
+                <p>Yes! Club USA is a student-led organization dedicated to making a positive impact in our local community of Murrieta and Temecula. Our mission is to empower students to become compassionate leaders through service, fostering a culture of giving back and creating meaningful change in the lives of those we serve.</p>
+            </section>
         </div>
 
-        <div id = "credibility"></div>
+        <div id = "credibility" class = "side">
+            <section>
+                <h1>Hear From Our Volunteers</h1>
+                <section>
+                    <div class = "testimonial">
+                        <img src = "img/testimonial-child.jpg" alt = "testimonial child">
+                        <p>"Volunteering with Yes! Club USA has been an incredible experience! i love bowties!"</p>
+                        <h3>-John Doe, Volunteer</h3>
+                    </div>
+                    <div class = "testimonial">
+                        <img src = "img/testimonial-child.jpg" alt = "testimonial child">
+                        <p>"I know I've made an impact in this world! Truly a great experience!"</p>
+                        <h3>-John Mulaney, Volunteer</h3>
+                    </div>
+                </section>
+            </section>
+        </div>
 
-        <div id = "works"></div>
+        <div id = "works" class = "side"></div>
 
         <div id ="footer"> </div>
         <script>
@@ -83,9 +104,12 @@
             var heroVideo = document.getElementById("hero-video");
 
             heroVideo.addEventListener("loadedmetadata", () => {
-                const h = heroVideo.videoHeight;
+                let hero = document.getElementById("hero");
+                let ratio  = heroVideo.videoWidth / heroVideo.videoHeight;
+                heroVideo.width= window.screen.width;
+                heroVideo.height= window.screen.width  / ratio;
 
-                document.getElementById("hero").style.minHeight = h + "px";
+                hero.style.minHeight = heroVideo.height + "px";
             });
         </script>
     </body>
