@@ -1,8 +1,36 @@
+
+
 img {
     width:50px;
     height:auto;
 }
 
+#header{
+    text-align: right;
+}
+
+#hero-video{
+    width:100%;
+    height:auto;
+    position:absolute;
+    
+
+}
+
+#hero{
+    display:flex;
+    justify-content: center;
+    position:relative;
+}
+
+#hero-content{
+    position:relative;
+    /* eerything down here is extra in this sectionws*/
+    z-index:1;
+    color:white;
+    text-align: center;
+    padding-top: 20%;
+}
 #footer-divider{
     display:flex;
     justify-content: center;
@@ -17,4 +45,11 @@ img {
 
 .centering{
     text-align: center;
+}
+
+.value-impact{
+
+    background-color:lightblue;
+    padding:30px;
+    border-radius: 10px;
 }

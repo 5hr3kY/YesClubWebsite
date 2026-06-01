@@ -5,7 +5,7 @@
         <title>Yes! Club USA</title>
         <link rel="stylesheet" href="style.css">
         <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial=scale=1.0">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <meta name = "keywords" content = "Yes! Club USA, Yes Club, community service">
         <meta name= "description" content= "Helping our local community in Murrieta/Temecula, California as highschooler through volunteer work.">
         <script type="application/ld+json">
@@ -31,11 +31,29 @@
 
     <body>
 
-        <div id="header"></div>
+        <div id="header">        </div>
 
-        <div id = "hero"></div>
+        <div id = "hero">
+            <video id = "hero-video" autoplay muted loop>
+                <source src="img/hero.mov" type="video/mp4">
+            </video>
+            <div id = "hero-content">
+                <h1>Serving our local community of Murrieta and Temecula through impactful volunteer events!</h1>
+                <h2>We are a passionate group of student volunteers dedicated to show leadership through service!</h2>
+                <div>
+                    <button onclick = toVolunteer() id = "volunteer-button" type="button">Volunteer!</button>
+                    <button onclick = toDonate() id = "donate-button" type="button">Donate!</button>
+                </div>
+            </div>
+        </div>
 
-        <div id = "value"   ></div>
+        <div id = "value">
+            <h1>How We've Changed our community</h1>
+            <h3 class = "value-impact">100+ lives impacted</h3>
+            <h3 class = "value-impact">$10k raised for local causes</h3>
+            <h3 class = "value-impact">100+ events hosted</h3>
+
+        </div>
 
         <div id = "credibility"></div>
 
@@ -54,6 +72,20 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+            });
+
+            function toVolunteer() {
+                window.location.href = "involvement.html";
+            }
+            function toDonate() {
+                window.location.href = "involvement.html";
+            }
+            var heroVideo = document.getElementById("hero-video");
+
+            heroVideo.addEventListener("loadedmetadata", () => {
+                const h = heroVideo.videoHeight;
+
+                document.getElementById("hero").style.minHeight = h + "px";
             });
         </script>
     </body>
