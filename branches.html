@@ -11,9 +11,17 @@
     <body>
         <div id="header"></div>
 
-        <div id = "branch-selector"></div>
+        <div id = "branch-selector">
+            <button class = "branch-button" id = "mm-button" onclick="showBranch('mm-button')">Murrieta Mesa</button>
+            <button class = "branch-button" id = "mv-button" onclick="showBranch('mv-button')">Murrieta Valley</button>
+            <button class = "branch-button" id = "chap-button" onclick="showBranch('chap-button')">Chapparal</button>
+            <button class = "branch-button" id = "go-button" onclick="showBranch('go-button')">Great Oak</button>
+            <button class = "branch-button" id = "vm-button" onclick="showBranch('vm-button')">Vista Murrieta</button>
+            <button class = "branch-button" id = "lc-button" onclick="showBranch('lc-button')">Linfield Christian</button>
+            <button class = "branch-button" id = "ob-button" onclick="showBranch('ob-button')">Official Branch</button>
+        </div>
 
-        
+
 
         <div id = "footer"></div>
         <script>
@@ -28,7 +36,12 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
             });
+
+            function showBranch(branch){
+                var branches = document.getElementById(branch);
+            }
         </script>
 
     </body>

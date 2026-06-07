@@ -55,9 +55,85 @@
 
         </div>
 
-        <div id = "credibility"></div>
+        <div id = "credibility">
+            <div>
+                <h2>How Murrieta has Changed From Us</h2>
+                <section class="carousel-section">
+                    <button class="arrow left" onclick="sL('carousel')">←</button>
 
-        <div id = "works"></div>
+                    <div class="carousel" id="carousel">
+                        <div class="card">
+                            <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                    </div>
+
+                    <button class="arrow right" onclick="sR('carousel')">→</button>
+                </section>
+                
+            </div>
+
+        </div>
+
+        <div id = "works">
+                        <div>
+                <h2>Check Out our Events We've Hosted!</h2>
+                <section class="carousel-section">
+                    <button class="arrow left" onclick="sL('carousels')">←</button>
+
+                    <div class="carousel" id="carousels">
+                        <div class="card">
+                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                        <div class="card">
+                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
+                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                       
+                        </div>
+                    </div>
+
+                    <button class="arrow right" onclick="sR('carousels')">→</button>
+                </section>
+                
+            </div>
+
+        </div>
 
         <div id ="footer"> </div>
         <script>
@@ -87,6 +163,22 @@
 
                 document.getElementById("hero").style.minHeight = h + "px";
             });
+
+
+            function sR(carouselType) {
+                document.getElementById(carouselType).scrollBy({
+                    left: 300,
+                    behavior: "smooth"
+                });
+            }
+
+            function sL(carouselType) {
+                document.getElementById(carouselType).scrollBy({
+                    left: -300,
+                    behavior: "smooth"
+                });
+            }
+
         </script>
     </body>
 </html>

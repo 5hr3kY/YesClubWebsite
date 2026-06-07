@@ -53,3 +53,38 @@ img {
     padding:30px;
     border-radius: 10px;
 }
+
+.carousel-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    width: 100%;
+    gap: 40px;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+}
+
+
+
+.card {
+    min-width: calc(100vw / 3 - 40px);
+    height: calc(100vw / 3 - 40px);
+
+    background: lightgray;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+
+}
