@@ -1,4 +1,7 @@
-
+.side{
+    display:flex;
+    justify-content: center;
+}
 
 img {
     width:50px;
@@ -10,16 +13,13 @@ img {
 }
 
 #hero-video{
-    width:100%;
-    height:auto;
+
     position:absolute;
     
 
 }
 
 #hero{
-    display:flex;
-    justify-content: center;
     position:relative;
 }
 
@@ -31,10 +31,7 @@ img {
     text-align: center;
     padding-top: 20%;
 }
-#footer-divider{
-    display:flex;
-    justify-content: center;
-}
+
 
 #footer-divider div{
     
@@ -42,7 +39,9 @@ img {
 
 }
 
-
+#footer{
+    position:relative;
+}
 .centering{
     text-align: center;
 }
