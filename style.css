@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden;
+}
+
 .side{
     display:flex;
     justify-content: center;
@@ -6,7 +10,20 @@
 img {
     width:50px;
     height:auto;
+
 }
+
+.profile-pic{
+    width:100px;
+    height:auto;
+}
+
+.branch-button section section{
+    display:flex;
+    justify-content: center;
+    gap:3vw;
+}
+
 
 #header{
     text-align: right;
@@ -85,5 +102,50 @@ img {
     align-items: center;
 
     font-size: 1rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    
+}
+
+#contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left:10vw;
+    padding-right:10vw;
+    align-items: center;}
+
+input, textarea {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#values .value{
+    background-color:rgba(173, 216, 230, 0.2);
+    padding:30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.divider{
+    display:flex;
+    margin: 5vw 5vw 5vw 5vw;
+
+}
+
+.event{
+    display:flex;
+    justify-content: center;
+    width:50%;
 
 }

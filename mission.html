@@ -9,23 +9,139 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     </head>
     <body>
-    <div id="header"></div>
-    <div id="footer"></div>
+        <div id="header"></div>
 
-        <script>
-            fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
+        <div id = "mission-hero">
+            <h1>Our Mission</h1>
+            <p>Yes! Club USA is a student-led organization dedicated to 
+                making a positive impact in our local community of Murrieta 
+                and Temecula. Our mission is to empower students to become 
+                compassionate leaders through service, fostering a culture 
+                of giving back and creating meaningful change in the lives 
+                of those we serve.</p>
 
+            <p>We showcase to the Youth the importance of helping the community and disadvantaged!</p>
+        </div>
 
-            fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-        </script>
+        <div>
+            <h2>Our Core Values</h2>
+            <section id = "values">
+                <section class = "value">
+                    <h3>Compassion</h3>
+                    <p>We believe in the power of empathy and kindness to create a more caring and inclusive community. We strive to understand and support those in need, fostering a culture of compassion in all our actions.</p>
+                </section>
+                <section class = "value">
+                    <h3>Leadership</h3>
+                    <p>We are committed to developing the leadership potential of our members, empowering them to take initiative, inspire others, and make a positive impact in their communities. We believe that everyone has the capacity to lead and create change.</p>
+                </section>
+                <section class = "value">
+                    <h3>Service</h3>
+                    <p>We are dedicated to serving our local community through meaningful volunteer work and impactful projects. We believe that service is a powerful way to give back, build connections, and create lasting change in the lives of those we serve.</p>
+                </section>
+            </section>
+        </div>
+
+        <div>
+            <h1>Events</h1>
+
+            <section id = "events">
+                <section class = "divider">
+
+                    <section class = "event">
+                        <div >
+                        <h3>Autism Awareness</h3>
+                        <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                        </div>
+                        <p>We helped sell cards to raise awareness about autism and raise funds for research and support services.</p>
+                    </section>
+                    <section class = "event">
+
+                        <p>Help us out in making cranes for the children!</p>
+
+                        <div >
+                        <h3>Oragami event</h3>
+                        <img src = "img/events-img.jpg" alt = "This is a picture of a child smiling">
+                        </div>
+
+                    </section>
+                </section>
+                <section class = "divider">
+                    <section class = "event">
+                        <div>
+                            <h3>Rice Beans Event</h3>
+                            <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                        </div>
+                        <p>Join us in spreading holiday cheer by participating in our annual toy drive. We collect new, unwrapped toys and distribute them to local children and families in need, ensuring that everyone can experience the joy of the holiday season.</p>
+                    </section>
+                        <section class = "event">
+                        <p>We had orcheastrated an event with our volunteers to sing to elders!</p>
+                        <div>
+                            <h3>Christmas Caroling</h3>
+                            <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+
+                        </div>
+                    </section>
+                </section>
+                <section class = "divider">
+                    <section class = "event">
+                        <div>
+                        <h3>Holiday Toy Drive</h3>
+                            <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                        </div>
+
+                        <p>Join us in spreading holiday cheer by participating in our annual toy drive. We collect new, unwrapped toys and distribute them to local children and families in need, ensuring that everyone can experience the joy of the holiday season.</p>
+                    </section>
+                    <section class = "event">
+                        <p>Join us in spreading holiday cheer by participating in our annual toy drive. We collect new, unwrapped toys and distribute them to local children and families in need, ensuring that everyone can experience the joy of the holiday season.</p>
+                        <div>
+                            <h3>Donation Drive</h3>
+                            <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+
+                        </div>
+                    </section>
+                </section>
+                <section class = "divider">
+                    <section class = "event">
+                        <div>
+                            <h3>Beach Clean-Up</h3>
+                            <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                        </div>
+                        <p>Join us for a day of environmental stewardship as we clean up our local beaches. We will work together to remove litter and debris, helping to protect marine life and preserve the beauty of our coastal environment.</p>
+                    
+                    </section>
+                    <section class = "event">
+                        <p>We teach kids and maintain their minds over the summer for two weeks!</p>
+                        <div>
+                        <h3> Summer Camp</h3>
+                        <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                        </div>
+                    </section>
+                    </section>
+                    <section class = "divider">
+                        <section class = "event">
+                            <div>
+                                <h3>Community Clean-Up</h3>
+                                <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+                            </div>
+
+                            <p>Participate in our community clean-up events where we come together to beautify our neighborhoods. We organize clean-up days at local parks, streets, and public spaces, promoting environmental stewardship and community pride.</p>
+                        </section>
+                        <section class = "event">
+                            <p>Yearly, we host a marathon with the proceeds to help pay for kids.</p>
+                            <div>
+                                <h3>Breast Cancer Awareness Marathon</h3>
+                                <img src = "img/events-img.jpg" alt = "This image has happy kids with volunteers around">
+
+                            </div>
+                        </section>
+                    </section>
+            </section>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src = "script.js"></script>
+        <script>    </script>
 
     </body>
 </html>

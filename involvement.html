@@ -11,20 +11,39 @@
     <body>
 
         <div id="header"></div>
-        <div id="footer"></div>
+
+        <h1>Get Involved</h1>
+
+        <p>Join us in making a difference in our community! There are many ways
+             to get involved, from volunteering at local events to participating in our monthly meetings.</p>
+
+        <div id = "involvement-options">
+            <button onclick = "openSection('Volunteering')"> Become a Volunteer!</button>
+            <button onclick = "openSection('Branching')"> Start a Branch!</button>
+
+        </div>
+
+        <div class = "involvement-section" id= "volunteering"></div>
+
+        <div class = "involvement-section" id = "Branching"></div>
+
+        <div id="footer"> </div>
+
+        <script src = "script.js"></script>
 
         <script>
-            fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
-            
-            fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
+            function openSection(type) {
+                let page = document.getElementById(type);
+                let doc = document.getElementsByClassName("involvement-section");
+
+                for ( var i = 0; i<doc.length ; i++){
+                    doc[i].style.display = "none";
+                } 
+                page.style.display = "block";
+
+            }
+
+
         </script>
 
     </body>

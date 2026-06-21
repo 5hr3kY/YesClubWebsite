@@ -8,4 +8,4 @@ the "testimonies" are random
 The website will be prettier once I'm done with the rough draft
 I need pictures of everybody's face
 
-I lowk am at a summer camp until Thursday
+I am gonna get slimed pls help ): 

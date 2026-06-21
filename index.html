@@ -41,8 +41,8 @@
                 <h1>Serving our local community of Murrieta and Temecula through impactful volunteer events!</h1>
                 <h2>We are a passionate group of student volunteers dedicated to show leadership through service!</h2>
                 <div>
-                    <button onclick = toVolunteer() id = "volunteer-button" type="button">Volunteer!</button>
-                    <button onclick = toDonate() id = "donate-button" type="button">Donate!</button>
+                    <button onclick = "toVolunteer()" id = "volunteer-button" type="button">Volunteer!</button>
+                    <button onclick = "heroVideo()" id = "donate-button" type="button">Donate!</button>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <section class="carousel-section">
                     <button class="arrow left" onclick="sL('carousel')">←</button>
 
-                    <div class="carousel" id="carousel">
+                    <div class="carousel" id="carousel1">
                         <div class="card">
                             <img src="img/testimonial-child.jpg" alt="This is a picture of a child smiling">
                             <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <button class="arrow right" onclick="sR('carousel')">→</button>
+                    <button class="arrow right" onclick="sR('carousel1')">→</button>
                 </section>
                 
             </div>
@@ -108,27 +108,23 @@
                     <div class="carousel" id="carousels">
                         <div class="card">
                             <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
-                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
+                            <h3>Event Name</h3>
+                            <p>Event description goes here.</p>
                         </div>
                         <div class="card">
                             <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
-                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
-                       
+                            <h3>Event Name</h3>
+                            <p>Event description goes here.</p>
                         </div>
                         <div class="card">
                             <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
-                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
-                       
+                            <h3>Event Name</h3>
+                            <p>Event description goes here.</p>
                         </div>
                         <div class="card">
                             <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
-                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
-                       
-                        </div>
-                        <div class="card">
-                            <img src="img/events-img.jpg" alt="This is a picture of a child smiling">
-                            <p>“Yes! Club has been a great way for me to give back to my community and make a positive impact. I have had the opportunity to volunteer at various events and have met so many amazing people along the way.” <br> - Jesus, Volunteer</p>
-                       
+                            <h3>Event Name</h3>
+                            <p>Event description goes here.</p>
                         </div>
                     </div>
 
@@ -139,21 +135,10 @@
 
         </div>
 
-        <div id ="footer"> </div>
+        <div id ="footer"></div>
+
+        <script src = "script.js"></script>
         <script>
-            fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
-
-            
-            fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-
             function toVolunteer() {
                 window.location.href = "involvement.html";
             }
