@@ -23,9 +23,33 @@
 
         </div>
 
-        <div class = "involvement-section" id= "volunteering"></div>
+        <div class = "involvement-section" id= "volunteering">
+            <form id="contact-volunteering">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
 
-        <div class = "involvement-section" id = "Branching"></div>
+        <p id="status"></p>
+
+            
+        </div>
+
+        <div class = "involvement-section" id = "Branching">
+
+
+            <form id="contact-branching">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        <p id="status"></p>
+
+            
+        </div>
 
         <div id="footer"> </div>
 
@@ -43,7 +67,46 @@
 
             }
 
+            window.addEventListener("load", () => {
+                let doc = document.getElementsByClassName("involvement-section");
+                for (var i = 0; i<doc.length; i++){
+                    doc[i].style.display = "none";
+                }
+            });
 
+             emailjs.init("XCxmKyQire0_XaqTy");
+
+            document.getElementById("contact-volunteering").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                emailjs.sendForm(
+                    "email",
+                    "template_u92hvmf",
+                    this
+                ).then(() => {
+                    document.getElementById("status").textContent = "Message sent!";
+                    this.reset();
+                }).catch(error => {
+                    document.getElementById("status").textContent = "Failed to send.";
+                    console.error(error);
+                });
+            });
+
+            document.getElementById("contact-branching").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                emailjs.sendForm(
+                    "email",
+                    "template_u92hvmf",
+                    this
+                ).then(() => {
+                    document.getElementById("status").textContent = "Message sent!";
+                    this.reset();
+                }).catch(error => {
+                    document.getElementById("status").textContent = "Failed to send.";
+                    console.error(error);
+                });
+            });
         </script>
 
     </body>

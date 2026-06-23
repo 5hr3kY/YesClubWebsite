@@ -21,9 +21,9 @@
                 <h2>Email</h2>
                 <p>contact@yesclub.org</p>
                 <h2>Location</h2>
-                <p>123 Main Street<br>City, State 12345</p>
+                <p>26143 Palmetto St., Murrieta, CA 92563</p>
                 <h2>Phone</h2>
-                <p>(123) 456-7890</p>
+                <p>+1 (626) 688-9440 </p>
             </section>
 
             <form id="contact-form">
@@ -41,15 +41,15 @@
 
         <script src = "script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script >
-            emailjs.init("XCxmKyQire0_XaqTy");//work on this
+        <script>
+            emailjs.init("XCxmKyQire0_XaqTy");
 
             document.getElementById("contact-form").addEventListener("submit", function(e) {
                 e.preventDefault();
 
                 emailjs.sendForm(
-                    "email",//work on this
-                    "template_u92hvmf",//work on this
+                    "email",
+                    "template_u92hvmf",
                     this
                 ).then(() => {
                     document.getElementById("status").textContent = "Message sent!";
@@ -60,9 +60,5 @@
                 });
             });
         </script>
-        
-        <script src = "script.js">
-</script>
-
     </body>
 </html>
