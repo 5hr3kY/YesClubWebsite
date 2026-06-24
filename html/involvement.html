@@ -4,7 +4,7 @@
     <head>
 
         <title>Get Involved!</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     </head>
@@ -18,8 +18,8 @@
              to get involved, from volunteering at local events to participating in our monthly meetings.</p>
 
         <div id = "involvement-options">
-            <button onclick = "openSection('Volunteering')"> Become a Volunteer!</button>
-            <button onclick = "openSection('Branching')"> Start a Branch!</button>
+            <button onclick = "openSection('volunteering')"> Become a Volunteer!</button>
+            <button onclick = "openSection('branching')"> Start a Branch!</button>
 
         </div>
 
@@ -36,7 +36,7 @@
             
         </div>
 
-        <div class = "involvement-section" id = "Branching">
+        <div class = "involvement-section" id = "branching">
 
 
             <form id="contact-branching">
@@ -53,7 +53,7 @@
 
         <div id="footer"> </div>
 
-        <script src = "script.js"></script>
+        <script src = "../js/script.js"></script>
 
         <script>
             function openSection(type) {
@@ -74,7 +74,7 @@
                 }
             });
 
-             emailjs.init("XCxmKyQire0_XaqTy");
+            emailjs.init("XCxmKyQire0_XaqTy");
 
             document.getElementById("contact-volunteering").addEventListener("submit", function(e) {
                 e.preventDefault();
