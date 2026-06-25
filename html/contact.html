@@ -41,24 +41,6 @@
 
         <script src = "../js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script>
-            emailjs.init("XCxmKyQire0_XaqTy");
-
-            document.getElementById("contact-form").addEventListener("submit", function(e) {
-                e.preventDefault();
-
-                emailjs.sendForm(
-                    "email",
-                    "template_u92hvmf",
-                    this
-                ).then(() => {
-                    document.getElementById("status").textContent = "Message sent!";
-                    this.reset();
-                }).catch(error => {
-                    document.getElementById("status").textContent = "Failed to send.";
-                    console.error(error);
-                });
-            });
-        </script>
+        <script src = "../js/contact.js"></script>
     </body>
 </html>
