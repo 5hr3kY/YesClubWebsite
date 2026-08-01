@@ -1,0 +1,28 @@
+h2,h3,h4{
+    font-size: 5vw;
+}
+
+
+
+html{
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+
+.branch-button section{
+    display:flex;
+    gap:3vw;
+}
+
+
+div{
+
+    border: 1px solid black;
+}
+
+.profile-pic{
+
+    width:100px;
+    height:auto;
+}
