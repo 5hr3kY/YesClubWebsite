@@ -1,57 +1,25 @@
 function createIntro(title,description){
     return `
-            <h2>${title}</h2>
+            <h2 class = "name">${title}</h2>
             <p>${description}</p>
-            <h3 class = 'centering'>Cabinet</h3>
+            <h3 class = "centering title">Cabinet</h3>
     `;
 }
 
 function createMeetingTimes(day,time,room){
     return `
-        <h3 class = 'centering'>Meeting Times</h3>
+        <h3 class = 'centering' id = "meeting-times">Meeting Times</h3>
         <p>Every ${day} at ${time} in ${room}</p>
     `;
 }
-/*
-function createBranch(title, name, img, description, side){
-    if (side == "left"){
-    return `
-        <section>
-        <div class="person">
-            <h2>${title}</h2>
-            <img src="${img}" alt="${name}" class = "profile-pic">
-            <h2>${name}</h2>
-        </div>
-
-        <p class = "officer-bio">${description}</p>
-
-        </section>
-    `;
-    } else {
-         return `
-        <section>
-
-        <p class = "officer-bio">${description}</p>
-
-        <div class="person">
-            <h2>${title}</h2>
-            <img src="${img}" alt="${name}" class = "profile-pic">
-            <h2>${name}</h2>
-        </div>
-
-        </section>
-        `;   
-    }
-}
-*/
 
 function createBranch(title, name, img, description, side){
     if (side == "left"){
     return `
 
-        <h2 class="left">${title}</h2>
+        <h2 class="left" class = "name">${title}</h2>
 
-        <section>
+        <section class = "box">
 
         <div class="person">
             <img src="${img}" alt="${name}" class = "profile-pic right">
@@ -64,12 +32,12 @@ function createBranch(title, name, img, description, side){
     `;
     } else {
          return `
-        <h2 class="right">${title}</h2>
-        <section>
+        <h2 class="right" class = "name">${title}</h2>
+        <section class = "box">
 
         <p class = "officer-bio left">${description}</p>
 
-        <div class="person">
+        <div class="person edge-right">
             <img src="${img}" alt="${name}" class = "profile-pic left">
             <h2>${name}</h2>
         </div>
@@ -252,7 +220,7 @@ function createVM(){
     vm.innerHTML += createBranch(
         "President",
         "Brooklynn Jurovich",
-        "../img/people/brooklynn.png", 
+        "../img/people/brooklynn.jpeg", 
         "Hello! My name is Brooklynn Jurovich and I am the president of YES Club at Vista Murrieta for the 2026-2027 school year. I am currently in the VMHS Golden Alliance and a black belt in taekwondo! I enjoy being apart of YES Club and I can’t wait to see what the future brings for our club",
         "left"
     );
@@ -372,7 +340,7 @@ function createOB(){
     ob.innerHTML += createBranch(
         "Social Media Manager",
         "Brooklynn Jurovich",
-        "../img/people/brooklynn.png", 
+        "../img/people/brooklynn.jpeg", 
         "Hello! My name is Brooklynn Jurovich and I am the second social media manager for YES Club. I love being apart of this community and making new friends; join YES Club!",
         "right"
     );
@@ -380,7 +348,7 @@ function createOB(){
     ob.innerHTML += createBranch(
         "Technology Specialist",
         "Charles Tran",
-        "../img/people/charles.png", 
+        "../img/people/charles.jpg", 
         "I am very excited to work on the executive board of YES Club USA! I am a senior at Mesa High School and I love to play volleyball and listen to vinyl records. As the part of tech, I work with the website and help with the equipment for the club as well!",
         "left"
     );
@@ -396,14 +364,14 @@ function createOB(){
     ob.innerHTML += createBranch(
         "Events",
         "Aaliyah Xu",
-        "../img/people/aaliyah.png",
+        "../img/people/aaliyah.jpg",
         "PLS ADD DESCRIPTION",
         "left"
     );
     ob.innerHTML += createBranch(
         "Leadership",
         "Brooklynn Jurovich",
-        "../img/people/brooklynn.png",
+        "../img/people/brooklynn.jpeg",
         "PLS ADD DESCRIPTION",
         "right"
     );

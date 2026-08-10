@@ -1,6 +1,9 @@
 body{
     overflow-x:hidden;
     font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    
 }
 
 .side{
@@ -11,23 +14,30 @@ body{
 img {
     width:50px;
     height: 50px;
+
 }
 
-.profile-pic{
-    width:100px;
-    height:auto;
-}
+/* Heade stuff */
 
+#header #text{
+
+    transform: translateY(50%);
+}
 #main-logo{
     width:10vw;
     height:auto;
     margin-left:0;
-    position:absolute;
+    background:transparent !important;
+    mix-blend-mode: multiply;
 }
 
-
-
-
+#header {
+    background-color: rgb(150, 137, 123);
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+}
 #header #text{
     text-align: right;
     font-size: 2.5vw;}
@@ -38,36 +48,12 @@ img {
     margin: 0 2vw 0 2vw;
 }
 
-#hero-video{
-
-    position:absolute;
-    
-
-}
-
-#hero{
-    position:relative;
-}
-
-#hero-content{
-    position:relative;
-    /* eerything down here is extra in this sectionws*/
-    z-index:1;
+#text a:hover{
     color:white;
-    text-align: center;
-    padding-top: 20%;
 }
 
 
-#footer-divider div{
-    
-    width:30%;
-
-}
-
-#footer{
-    position:relative;
-}
+/* Appears to be index code */
 .centering{
     text-align: center;
 }
@@ -166,6 +152,10 @@ button {
     margin: 5vw 0 5vw 0;
 }
 
+
+
+/* General  Section Styles */
+
 .left{
     text-align: left;
     justify-content: left;
@@ -175,3 +165,71 @@ button {
     text-align: right;
     justify-content: right;
 }
+
+#spacing{
+    margin: 5vw;
+}
+
+/* Footer Styles */
+#footer{
+    margin-top: 5vw;
+    padding-bottom:1vw;
+    padding-top:1vw;
+    background-color: rgb(150, 137, 123);
+}
+
+
+
+
+.footer-img{
+    width: 4vw;
+    height: 4vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background:transparent !important;
+    mix-blend-mode: multiply;
+    
+}
+.footer-img:hover{
+    transform: scale(1.5);
+
+}
+
+
+
+.footer-link{
+    text-decoration: none;
+    color:black;
+    margin: 0 2vw 0 2vw;
+}
+
+.footer-link:hover{
+    color:white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#footer-divider div{
+    
+    width:16%;
+
+}
+
+
+#contact li{
+    margin: 1vw;
+}
+
+#footer-img{
+    width: 15vw;
+    height: 15vw;
+    position:relative;
+    top:1vh;
+}
+
+
+/* End of Footer Styles */

@@ -1,3 +1,23 @@
 #hero-video{
     width:100vw;
+
+}
+
+
+#hero-video{
+    position:absolute;
+
+}
+
+#hero{
+    position:relative;
+}
+
+#hero-content{
+    position:relative;
+    /* eerything down here is extra in this sectionws*/
+    z-index:1;
+    color:white;
+    text-align: center;
+    padding-top: 20%;
 }
