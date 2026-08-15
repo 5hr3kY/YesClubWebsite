@@ -17,7 +17,7 @@ img {
 
 }
 
-/* Heade stuff */
+/* Header stuff */
 
 #header #text{
 
@@ -124,26 +124,21 @@ button {
     padding: 10px;
     cursor: pointer;
 }
-
+/*
 #values .value{
     background-color:rgba(173, 216, 230, 0.2);
     padding:30px;
     border-radius: 10px;
     margin: 20px;
 }
-
+*/
 .divider{
     display:flex;
     margin: 5vw 5vw 5vw 5vw;
 
 }
 
-.event{
-    display:flex;
-    justify-content: center;
-    width:50%;
 
-}
 
 #involvement-options{
     display:flex;

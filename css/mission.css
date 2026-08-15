@@ -1,0 +1,81 @@
+.event img{
+
+  width:20vw;
+  height:auto;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#pictures-please{
+  text-align:center;
+  font-size:2rem;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+#pictures-please img{
+  width:30vw;
+  height:auto;
+}
+.event-divider{
+
+  border:1px solid black;
+  margin: 2rem;
+
+}
+
+
+.event div{
+  display:flex;
+  
+}
+.event{
+  width:50%;
+  
+}
+
+.event h3{
+  font-size:1.5rem;
+  text-align:center;
+}
+
+#mission-hero{
+  margin-left:4vw;
+  margin-right:4vw;
+  font-size:2.5rem;
+
+}
+
+#mission-values{
+
+  margin:4vw;
+  font-size:1.5rem;
+  background-color:rgba(150, 137, 123,0.25);
+  padding:30px;
+}
+
+
+
+#more-pictures a{
+  width:100%;
+  height:auto;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  padding:30px;
+  border-radius: 10px;
+  font-size:4rem;
+  text-decoration:none;
+  color:black;
+}
+
+#more-pictures h3:hover{
+  transform: scale(1.1);
+}
+
+
+#event-title{
+  text-align:center;
+  font-size:3rem;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
